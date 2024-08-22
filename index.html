@@ -14,6 +14,7 @@
               clifford: '#da373d',
               'btn-bg': '#ABEF5F',
               'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+              'btn-bg-green': 'rgba(171, 239, 95, 0.5)',
             },
           },
         },
@@ -22,10 +23,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
-    <header>
+<body >
+    <header class="pb-10">
       <!-- this is nav bar -->
-      <nav class="lg:px-20 mx-auto lg:mt-2">
+      <nav class="lg:px-20 px-4 mx-auto lg:mt-2">
         <div class="navbar bg-base-100 " >
           <div class="navbar-start">
             
@@ -42,14 +43,12 @@
               <li class="hover:font-extrabold"><a>Contact Us</a></li>
             </ul>
           </div>
-          <div class="navbar-end hidden lg:flex">
-            <i class="fa-solid fa-magnifying-glass rounded-[32px] bg-white border-2 border-[#E9E9E9] p-2 mr-1 text-[#737373]"></i>
-            <i class="fa-solid fa-cart-shopping rounded-[32px] bg-white border-2 border-[#E9E9E9] p-2 mr-1 text-[#737373]"></i>
+          <div class="navbar-end  lg:flex">
+            <i class="fa-solid fa-magnifying-glass rounded-[32px] bg-white border-2 border-[#E9E9E9] p-2 mr-1 text-[#737373] hidden md:flex"></i>
+            <i class="fa-solid fa-cart-shopping rounded-[32px] bg-white border-2 border-[#E9E9E9] p-2 mr-1 text-[#737373] hidden md:flex"></i>
             
-            <a class="btn bg-[#ABEF5F] font-extrabold text-xl rounded-[32px] ">Book Consult<i class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-[50%] -rotate-45"></i></a>
-            
-          </div>
-          <div class="dropdown md:ml-0  ml-[30%]">
+            <a class="btn bg-[#ABEF5F] font-extrabold text-xl rounded-[32px] hidden md:flex">Book Consult<i class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-[50%] -rotate-45"></i></a>
+            <div class="dropdown ">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +65,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 left-auto right-0 w-52 shadow">
               <li class="hover:font-extrabold"><a>Home</a></li>
             <li class="hover:font-extrabold"><a>Services</a></li>
             <li class="hover:font-extrabold"><a>Portfolio</a></li>
@@ -74,8 +73,20 @@
             <li class="hover:font-extrabold"><a>Contact Us</a></li>
             </ul>
           </div>
+          </div>
+          
         </div>
       </nav>
+      <!-- banner part -->
+       <section>
+        <div><img src="./assets/banner.png" alt="" class="mx-auto px-10"></div>
+        <div class="lg:px-20 px-4 mx-auto mt-2">
+          <h1 class="text-center px-4 font-extrabold text-2xl md:text-6xl mb-6">A barn house of this design has a striking appearance</h1>
+          <p class="font-medium px-4 text-[14px] md:text-[16px] text-center md:px-20 text-[#494949] leading-6 mb-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          
+        </div>
+        <div class="mx-auto flex justify-center lg:px-20 px-4"><a class="btn px-20 md:px-0 md:w-52 bg-btn-bg-green font-bold text-xl rounded-[32px] ">View Details<i class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black p-2 rounded-[50%] -rotate-45"></i></a></div>
+       </section>
     </header>
 
     <main>

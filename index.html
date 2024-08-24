@@ -16,14 +16,21 @@
               'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
               'btn-bg-green': 'rgba(171, 239, 95, 0.5)',
             },
+            fontFamily:{
+              manrope:['manrope', 'sans-serif'],
+            },
           },
         },
       }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
 
 </head>
-<body >
+<body class="font-manrope">
     <header class="pb-10">
       <!-- this is nav bar -->
       <nav class="lg:px-20 px-4 mx-auto lg:mt-2">
@@ -97,13 +104,14 @@
         <div class="md:pt-24 ">
           <div class="">
             <div class=" flex justify-center md:justify-start"><button class="mb-4 mt-4 md:mt-0 shadow-lg md:w-24   bg-white text-gray-700 items-center md:pl-2 font-normal text-sm rounded-[32px] md:flex"><i class="mx-1  fa-solid fa-arrow-right text-gray-700  rounded-[50%] text-xs text-justify items-center"></i>About us</button></div>
-            <h1 class="font-bold md:text-4xl mb-8 flex justify-center text-center md:text-left md:justify-start">We design thoughtful,<br> liveable spaces</h1>
+            <h1 class="font-extrabold md:text-5xl mb-8 flex justify-center text-center md:text-left md:justify-start">We design thoughtful,<br> liveable spaces</h1>
             <p class="text-[#494949] text-xs font-medium mb-6 flex justify-center text-center md:text-left md:justify-start">The barn house captivates with its blend of rustic charm and <br class="hidden md:flex"> 
               modern sophistication, featuring weathered wood, sleek metal accents.</p>
               <div class="px-4 my-4 rounded-lg flex bg-base-100 w-full shadow-xl mb-8 ">
                 <div class=" flex items-center max-w-fit flex-1 "><img src="./assets/commercial.png" alt=""></div>
                 <div class="flex-1 card-body w-1/2">
-                  <h2 class="card-title">Commercial</h2>
+                  <h2 class="font-extrabold text-xl
+                  ">Commercial</h2>
                   <p>The barn house captivates with its blend of rustic charm and modern.</p>
                   
                 </div>
@@ -111,7 +119,7 @@
               <div class="px-4 rounded-lg flex bg-base-100 w-full shadow-xl ">
                 <div class=" flex items-center max-w-fit flex-1"><img src="./assets/residential.png" alt=""></div>
                 <div class="flex-1 card-body w-1/2">
-                  <h2 class="card-title">Residential</h2>
+                  <h2 class="font-extrabold text-xl">Residential</h2>
                   <p>The barn house captivates with its blend of rustic charm and modern.</p>
                   
                 </div>
@@ -182,7 +190,7 @@
          <section class="md:px-20 px-6 bg-gray-100 md:bg-transparent mb-12">
           <!-- button -->
           <div class="flex justify-center pt-10 b">
-            <button class=" shadow-lg w-44 justify-center bg-[#ABEF5F]/[.2] text-gray-700  font-normal text-sm rounded-[32px] flex mx-auto"><i class="mx-1 my-1  fa-solid fa-arrow-right text-gray-700  rounded-[50%] text-xs text-justify items-center"></i>Explore our Latest works</button>
+            <button class=" shadow-lg w-48 justify-center bg-[#ABEF5F]/[.2] text-gray-700  font-normal text-sm rounded-[32px] flex mx-auto"><i class="mx-1 my-1  fa-solid fa-arrow-right text-gray-700  rounded-[50%] text-xs text-justify items-center"></i>Explore our Latest works</button>
           </div>
           <!-- texts div -->
           <div class="">
@@ -227,7 +235,7 @@
           </div>
          </section>
          <!-- unique section -->
-         <section class="md:px-20 px-6 mt-32 bg-gray-100 mb-10 pb-16">
+         <section class="md:px-20 px-6 mt-32 bg-gray-100  pb-16">
           
           <!-- texts div -->
           <div class="">
@@ -258,7 +266,7 @@
           </div>
           <!-- text header -->
           <div class="">
-            <h1 class="font-bold md:text-4xl mb-4 flex justify-center text-center pt-10 ">Let’s Discuss Next Project</h1>
+            <h1 class="font-extrabold md:text-4xl mb-4 flex justify-center text-center pt-10 ">Let’s Discuss Next Project</h1>
             <p class="text-[#494949] text-xs font-medium mb-6 flex mx-auto justify-center text-center md:w-[500px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
           </div>
 
@@ -276,10 +284,10 @@
          </section>
     </main>
     <footer class="bg-[#1C1C1C]">
-      <section class="md:px-20 px-6 py-6">
+      <section class="md:px-20 px-6 py-6 -mt-8">
         <!-- logo -->
          
-          <div class="mx-auto flex justify-center lg:px-20 px-4"><a class="btn px-20 md:px-0 md:w-52 bg-transparent border-none font-extrabold text-2xl text-white  rounded-[32px] "><i class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black text-xs px-1.5 py-1 rounded-[100%] -rotate-45 "></i>Rinterio</a></div>
+          <div class="mx-auto flex justify-center lg:px-20 mt-10 px-4"><a class="btn px-20 md:px-0 md:w-52 bg-transparent border-none font-extrabold text-2xl text-white  rounded-[32px] "><i class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black text-xs px-1.5 py-1 rounded-[100%] -rotate-45 "></i>Rinterio</a></div>
           <p class="md:px-60 px-6 pt-8 text-center text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
          
          <!-- menu -->
